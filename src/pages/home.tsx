@@ -47,7 +47,7 @@ const HomepageStyles = styled(motion.div)`
             top: 0;
             .name{
                 h1{
-                    font-size: calc(var(--VH) * 18);
+                    font-size: calc(var(--VW) * 10);
                     text-transform: uppercase;
                     line-height: 9vw;
                     height: 7vw;
@@ -133,8 +133,8 @@ const HomepageStyles = styled(motion.div)`
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 40%;
-        @media (hover: none) and (pointer: coarse), (max-width: 500px) {
+        width: calc(var(--VW) * 40);
+        @media (max-width: 500px) {
             display: none;
         }
         &-top {

@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import { motion } from "framer-motion";
 
 const StyledSideNav = styled(motion.div)`
-    @media (max-width: 500px){
+    @media (max-width: 768px){
         display: none;
     }
     .home, .projects, .articles, .about{
@@ -18,10 +18,6 @@ const StyledSideNav = styled(motion.div)`
         width: 4.2vw;
         height: 3.2vw;
         mix-blend-mode: normal;
-        @media (hover: none) and (max-width: 500px){
-            width: 8vw;
-            height: 7vw;
-        }
         svg{
             width: 100%;
             height: 100%;
@@ -35,9 +31,6 @@ const StyledSideNav = styled(motion.div)`
         transform: rotate(90deg);
         transform-origin: 0% 0%;
         font-size: calc(var(--VW) *1.2);
-        @media (hover: none) and (pointer: coarse), (max-width: 500px){
-            font-size: calc(var(--VW) *3);
-        }
         :hover{
             -webkit-text-stroke: 0.1vw var(--black);
         }
@@ -59,9 +52,6 @@ const StyledSideNav = styled(motion.div)`
 
     .about{
         bottom: 30vw;
-        @media (hover: none) and (pointer: coarse), (max-width: 500px){
-            bottom: 13.5vw;
-        }
     }
 
 

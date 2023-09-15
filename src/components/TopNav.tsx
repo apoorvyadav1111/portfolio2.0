@@ -9,7 +9,7 @@ const TopNavStyles = styled(motion.div)`
     padding: 10px;
     width: 100%;
     font-size: calc(var(--VH)*1.5);
-    @media (min-width: 500px){
+    @media (min-width: 768px){
         display: none;
     }
     .navbar {
